@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyodra Ginting: The Goddess Tour 2026</title>
+    <style>
+        /* CSS RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Playfair Display', serif, 'Segoe UI';
+        }
+
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            /* Background menggunakan gradasi mewah agar teks mudah dibaca */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(5,5,5,1)), 
+                        url('https://images.unsplash.com/photo-1459749411177-042180ce673c?auto=format&fit=crop&q=80&w=2000') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 10vw, 5.5rem);
+            letter-spacing: 8px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #f2f2f2;
+            text-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+        }
+
+        .hero span.gold {
+            color: #d4af37;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            color: #d1d1d1;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .btn-buy {
+            padding: 18px 50px;
+            font-size: 1rem;
+            background: transparent;
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #d4af37;
+            border-radius: 2px;
+            transition: all 0.4s ease;
+            letter-spacing: 2px;
+        }
+
+        .btn-buy:hover {
+            background-color: #d4af37;
+            color: #000;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #d4af37;
+        }
+
+        /* INFO CARDS */
+        .grid-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .card {
+            background: #111;
+            padding: 40px;
+            border-left: 3px solid #d4af37;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            background: #1a1a1a;
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: #eee;
+        }
+
+        .card p {
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+
+        /* TICKETING TABLE */
+        .ticket-wrapper {
+            overflow-x: auto;
+            background: #111;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+
+        th {
+            text-align: left;
+            padding: 20px;
+            border-bottom: 1px solid #333;
+            color: #d4af37;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        td {
+            padding: 20px;
+            border-bottom: 1px solid #222;
+        }
+
+        .category-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .price {
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            background: #000;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        footer p {
+            color: #555;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>LYODRA <span class="gold">GINTING</span></h1>
+        <p>The Goddess Tour 2026</p>
+        <a href="#tickets" class="btn-buy">PESAN TIKET</a>
+    </header>
+
+    <div class="container">
+        <div class="section-header">
+            <h2>Informasi Acara</h2>
+            <p>Saksikan penampilan spektakuler Sang Dewi di panggung termegah tahun ini.</p>
+        </div>
+
+        <div class="grid-info">
+            <div class="card">
+                <h3>Waktu & Tempat</h3>
+                <p>📍 ICE BSD Hall 5-6, Tangerang</p>
+                <p>📅 Sabtu, 11 Juli 2026</p>
+                <p>⏰ 19.00 WIB - Selesai</p>
+            </div>
+            <div class="card">
+                <h3>Special Guest</h3>
+                <p>Konser ini akan dimeriahkan oleh kolaborasi eksklusif bersama <strong>Afgan</strong> dan iringan musik dari <strong>Andi Rianto</strong>.</p>
+            </div>
+        </div>
+
+        <div id="tickets" class="section-header">
+            <h2>Kategori Tiket</h2>
+        </div>
+
+        <div class="ticket-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kategori</th>
+                        <th>Harga</th>
+                        <th>Kapasitas</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="category-name">DIAMOND (VIP)</td>
+                        <td class="price">Rp 2.500.000</td>
+                        <td>Numbered Seating</td>
+                        <td><small>Tersedia</small></td>
+                    </tr>
+                    <tr>
+                        <td class="category-name">VVIP</td>
+                        <td class="price">Rp 1.750.000</td>
+                        <td>Numbered Seating</td>
+                        <td><small>Tersedia</small></td>
+                    </tr>
+                    <tr>
+                        <td class="category-name">PLATINUM</td>
+                        <td class="price">Rp 1.200.000</td>
+                        <td>Seating</td>
+                        <td><small>Terbatas</small></td>
+                    </tr>
+                    <tr>
+                        <td class="category-name">FESTIVAL</td>
+                        <td class="price">Rp 550.000</td>
+                        <td>Free Standing</td>
+                        <td><small>Tersedia</small></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Lyodra Ginting Official Management. All Rights Reserved.</p>
+        <p>Gunakan tiket resmi untuk menghindari penipuan. Syarat & Ketentuan berlaku.</p>
+    </footer>
+
+</body>
+</html>
