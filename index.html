@@ -247,7 +247,9 @@
             </table>
         </div>
     </div>
-
+<audio class="player-audio" controls>
+    <source src="musik.mp3" type="audio/mpeg">
+</audio>
     <footer>
         <p>&copy; 2026 Lyodra Ginting Official Management. All Rights Reserved.</p>
         <p>Gunakan tiket resmi untuk menghindari penipuan. Syarat & Ketentuan berlaku.</p>
@@ -256,84 +258,4 @@
 </body>
 </html>
 
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lyodra - Sang Dewi | Music Player</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-    <div class="music-card">
-        <div class="cover-art">
-            <img src="https://via.placeholder.com/250" alt="Lyodra Sang Dewi Cover">
-        </div>
-        
-        <div class="info">
-            <h1>Sang Dewi</h1>
-            <p>Lyodra ft. Andi Rianto</p>
-        </div>
-
-        <div class="player">
-            <audio controls>
-                <source src="audio-file.mp3" type="audio/mpeg">
-                Browser kamu tidak mendukung elemen audio.
-            </audio>
-        </div>
-
-        <div class="lyrics-preview">
-            <p>"Walaupun dirimu tak bersayap..."</p>
-        </div>
-    </div>
-
-</body>
-</html>
-
-/* Mengatur tampilan dasar halaman */
-body {
-    background-color: #f0f2f5;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-/* Mengatur kotak kartu musik */
-.music-card {
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-}
-
-/* Mengatur gambar cover */
-.cover-art img {
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-/* Mengatur teks informasi lagu */
-.info h1 {
-    font-size: 1.5rem;
-    margin: 15px 0 5px 0;
-    color: #333;
-}
-
-.info p {
-    font-size: 1rem;
-    color: #666;
-    margin: 0 0 20px 0;
-}
-
-/* Mengatur pemutar audio agar penuh */
-.player audio {
-    width: 100%;
-    margin-top: 10px;
-}
